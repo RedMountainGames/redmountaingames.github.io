@@ -136,7 +136,7 @@
   .fusion-div {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 200%;
   min-height: 35rem;
   padding: 15rem 0;
   background: url("../img/bg_fusion.jpg");
