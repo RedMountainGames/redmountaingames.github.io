@@ -28,7 +28,6 @@
   position: relative;
   top: 30%;
   left: 50%;
-
   transform: translate(-50%, -30%);
   font-size: 90%;
   -webkit-text-stroke: 0.3px gray;
@@ -38,7 +37,7 @@
 .fusion-div {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: auto;
   min-height: 35rem;
   padding: 15rem 0;
   background: url("../img/bg_fusion.jpg");
@@ -51,7 +50,7 @@
 .dbd-div {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: auto;
   min-height: 35rem;
   padding: 15rem 0;
   background: url("../img/DBD_scr_road_2.png");
