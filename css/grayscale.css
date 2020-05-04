@@ -6,7 +6,7 @@
 
 #mainNav {
   min-height: 56px;
-  background-color: #fff;
+  background-color: rgba(22, 22, 22, 1.0);
 }
 
 #mainNav .navbar-toggler {
@@ -21,11 +21,14 @@
 }
 
 #mainNav .navbar-brand {
-  color: #161616;
+  color: transparent;
   font-weight: 700;
   padding: .0rem 0;
-  max-height: 74%;
-  max-width: 74%;
+  
+  height: auto;
+  width: auto;
+  max-height: 72px;
+  max-width: 250px;
 }
 
 #mainNav .nav-item-special {
