@@ -28,6 +28,19 @@
   -webkit-text-fill-color: white;
 }
 
+@media (min-width: 500px) {
+	.project-div {
+	  position: relative;
+	  text-align: center;
+	  background-color: rgba(22, 22, 22, 1.0);
+	  width: 100%;
+	  height: 200%;
+	  margin: 0;
+	  padding: 0;
+	  background-repeat: no-repeat;
+	}
+}
+
 .centered-subtitle {
   position: absolute;
   top: 30%;
@@ -38,13 +51,11 @@
   -webkit-text-fill-color: white;
 }
 
-@media (min-width: 992px) {
-  .centered hr {
-    border-color: #BF000D;
-    border-width: .25rem;
-    width: 200%;
-	margin-left: -50%;
-  }
+.centered hr {
+  border-color: #BF000D;
+  border-width: .25rem;
+  width: 200%;
+  margin-left: -50%;
 }
 
 #mainNav {
