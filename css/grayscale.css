@@ -34,6 +34,19 @@
   -webkit-text-fill-color: white;
 }
 
+.fusion-div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: url("../img/bg_fusion.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
 .dbd-div {
   position: relative;
   width: 100%;
@@ -45,138 +58,6 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-}
-
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
-@media (min-width: 1281px) {
-  
-  .fusion-div {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  min-height: 35rem;
-  padding: 15rem 0;
-  background: url("../img/bg_fusion.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
-  
-}
-
-/* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  
-  .fusion-div {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  min-height: 35rem;
-  padding: 15rem 0;
-  background: url("../img/bg_fusion.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
-  
-}
-
-/* 
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  
-  .fusion-div {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  min-height: 35rem;
-  padding: 15rem 0;
-  background: url("../img/bg_fusion.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
-  
-}
-
-/* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  
-  .fusion-div {
-  position: relative;
-  width: 100%;
-  height: 200%;
-  min-height: 35rem;
-  padding: 15rem 0;
-  background: url("../img/bg_fusion.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
-  
-}
-
-/* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
-
-@media (min-width: 481px) and (max-width: 767px) {
-  
-  .fusion-div {
-  position: relative;
-  width: 100%;
-  height: 200%;
-  min-height: 35rem;
-  padding: 15rem 0;
-  background: url("../img/bg_fusion.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
-  
-}
-
-/* 
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-
-@media (min-width: 320px) and (max-width: 480px) {
-  
-  .fusion-div {
-  position: relative;
-  width: 100%;
-  height: 200%;
-  min-height: 35rem;
-  padding: 15rem 0;
-  background: url("../img/bg_fusion.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
-  
 }
 
 #mainNav {
