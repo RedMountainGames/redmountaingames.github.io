@@ -12,8 +12,8 @@
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #64a19d;
-  border: 1px solid #64a19d;
+  color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 #mainNav .navbar-toggler:focus {
@@ -47,6 +47,53 @@
 }
 
 @media (min-width: 992px) {
+  #mainNav {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+	background-color: rgba(22, 22, 22, 0.0);
+    transition: background-color 0.3s ease-in-out;
+  }
+  #mainNav .navbar-brand {
+    padding: .5rem 0;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  #mainNav .nav-link {
+    transition: none;
+    padding: 2rem 1.5rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  #mainNav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.75);
+  }
+  #mainNav .nav-link:active {
+    color: white;
+  }
+  #mainNav.navbar-shrink {
+	background-color: rgba(22, 22, 22, 1.0);
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    color: #161616;
+  }
+  #mainNav.navbar-shrink .nav-link {
+    color: rgba(255, 255, 255, 0.5);
+    padding: 1.5rem 1.5rem 1.25rem;
+    border-bottom: 0.25rem solid transparent;
+  }
+  #mainNav.navbar-shrink .nav-link:hover {
+    color: #BF000D;
+  }
+  #mainNav.navbar-shrink .nav-link:active {
+    color: #467370;
+  }
+  #mainNav.navbar-shrink .nav-link.active {
+    color: #BF000D;
+    outline: none;
+    border-bottom: 0.25rem solid #BF000D;
+  }
+}
+
+@media (min-width: 300px) {
   #mainNav {
     padding-top: 0;
     padding-bottom: 0;
