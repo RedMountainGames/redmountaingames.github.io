@@ -15,17 +15,10 @@
   -webkit-text-fill-color: white;
 }
 
-.centered hr {
-  border-color: #BF000D;
-  border-width: .25rem;
-  width: 200%;
-  margin-left: -50%;
-}
-
 .centered-subtitle {
   width: 60%;
   position: relative;
-  top: 30%;
+  top: 31%;
   left: 50%;
   transform: translate(-50%, -30%);
   font-size: 90%;
@@ -68,6 +61,13 @@
     height: 100vh;
     padding: 0;
   }
+  
+  .centered hr {
+	  border-color: #BF000D;
+	  border-width: .25rem;
+	  width: 200%;
+	  margin-left: -50%;
+	}
 }
 
 #mainNav {
