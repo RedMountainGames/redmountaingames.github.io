@@ -21,8 +21,70 @@
 
   <!-- Custom styles for this template -->
   <link href="css/grayscale.css" rel="stylesheet">
+  <script src="vendor/jquery/jquery.min.js"></script>
   
   <link rel="icon" href="img/icon.ico">
+  
+  <script language="javascript">
+	var scrolling = false;
+	var currentPos = 0;
+
+    function scrollUp(){
+        if(!scrolling && currentPos > 0 ){
+            scrolling=true;
+            currentPos --;
+            var scrollToElement = $('.scrollTo')[currentPos];
+
+            $('html, body').animate({
+                scrollTop: $(scrollToElement).offset().top - 70
+            }, 500, function(){
+                scrolling = false;
+            });      
+        }
+    }   
+
+    function scrollDown(){   
+        if(!scrolling && currentPos < $('.scrollTo').length-1  ){
+            scrolling=true;
+            currentPos ++;
+            var scrollToElement = $('.scrollTo')[currentPos];
+
+            $('html, body').animate({
+                scrollTop: $(scrollToElement).offset().top - 70
+            }, 500,function(){
+                scrolling = false;
+            }); 
+        }
+    }    
+
+    $(document).ready(function() {
+        for( var i = 0; i < $('.scrollTo').length; i++){
+            var elm = $('.scrollTo')[i];
+
+            if( $(document).scrollTop() - 70 >= $(elm).offset().top ){
+                currentPos = i;
+            }
+        }
+
+        $(document).bind('DOMMouseScroll', function(e){
+            if(e.originalEvent.detail > 0) {
+                scrollDown();
+            }else {
+                scrollUp();   
+            }
+            return false;
+        });
+
+        $(document).bind('mousewheel', function(e){
+            if(e.originalEvent.wheelDelta < 0) {
+                scrollDown();
+            }else {
+                scrollUp();     
+            }
+            return false;
+        });
+    });
+  </script>
 
 </head>
 
@@ -59,7 +121,7 @@
   </nav>
 
   <!-- Header -->
-  <header class="masthead">
+  <header class="masthead scrollTo">
     <div class="container d-flex h-100 align-items-center">
       <div class="mx-auto text-center">
 
@@ -70,7 +132,7 @@
   </header>
 
   <!-- About Section -->
-   <section id="about" class="about-section bg-light">
+   <section id="about" class="about-section bg-light scrollTo">
     <div class="container">
 
 		<div class="row align-items-center no-gutters mb-4 mb-lg-5">
@@ -90,7 +152,7 @@
 	</div>
    </section>
 
-	<div class="fusion-div" id="projects">
+	<div class="fusion-div scrollTo" id="projects">
 		<div class="centered">
 			<h4 class="text-white">Fusion</h4>
 			<hr class="">
@@ -105,7 +167,7 @@
         </div>
 	</div> 
 	
-	<div class="dbd-div">
+	<div class="dbd-div scrollTo">
 		<div class="centered">
 			<h4 class="text-white">Dead by Design</h4>
 			<hr class="">
@@ -119,71 +181,9 @@
 			</p>
         </div>
 	</div> 
-		
-  <!-- Projects Section 
-  <section id="projects" class="projects-section bg-light">
-  
-      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-
-        <div class="col-lg-12">
-
-          <div class="bg-black text-center my-auto">
-            <div class="d-flex my-auto col-centered">
-
-			<img class="img-fluid mx-auto my-auto" src="img/bg_fusion.jpg" alt="">
-
-			  <div class="project-text-title w-100 my-auto text-center text-lg-center">
-			    <h4 class="text-white">Fusion</h4>
-				<hr class="d-none d-lg-block mb-0 ml-12">
-			  </div>
-
-              <div class="project-text my-auto text-center text-lg-left">
-                <p class=" text-white-50 text-justify">
-				Fusion is a third person shooter with elements of Survival Horror. Events takes place at the station Black Mountain - the heart 
-				<br>of a modern military research centre directed by scientist Natasha Melnyk. After accident the acient forces has been 
-				<br>unleashed. Now Natasha's life won't be the same. Play and help her to fight against dark creatures on PC.
-				</p>
-
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-
-        <div class="col-lg-12">
-
-          <div class="bg-black text-center my-auto">
-            <div class="d-flex my-auto col-centered">
-
-			<div class="project-text-title w-100 my-auto text-center text-lg-center">
-			    <h4 class="text-white">Dead by Design</h4>
-				<hr class="d-none d-lg-block mb-0 ml-12">
-			  </div>
-
-			<img class="img-fluid mx-auto my-auto" src="img/DBD_scr_road_2.png" alt="">
-
-              <div class="project-text w-100 my-auto text-center text-lg-justify">
-                <p class="text-white-50 text-justify">
-				Dead by Design is a first person action-adventure game. After a long term of punishment, the Divinus and his partner move to 
-				<br>Island to finish their last case. But how exactly the case will end depends on your skills, ability management or stealth. Solve 
-				<br>the case and bring the peace to magestic open-world filled of nature.
-				</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-  </section>
-  -->
   
   <!-- Contact Section -->
-  <section class="contact-section bg-black" id="signup">
+  <section class="contact-section bg-black scrollTo" id="signup">
     <div class="container">
 
       <div class="featured-text text-center text-white">
@@ -220,6 +220,7 @@
       Copyright &copy; Red Mountain Games 2020
     </div>
   </footer>
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
