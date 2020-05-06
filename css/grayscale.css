@@ -12,6 +12,7 @@
   transform: translate(-50%, -20%);
   font-size: 90%;
   -webkit-text-stroke: 0.3px gray;
+  text-shadow: 0 1px 0 black;
   -webkit-text-fill-color: white;
 }
 
@@ -22,7 +23,8 @@
   left: 50%;
   transform: translate(-50%, -30%);
   font-size: 90%;
-  -webkit-text-stroke: 0.3px gray;
+  -webkit-text-stroke: 0.1px black;
+  text-shadow: 0 1px 0 black;
   -webkit-text-fill-color: white;
 }
 
@@ -32,7 +34,8 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: url("../img/bg_fusion.jpg");
+  background-color: rgba(22, 22, 22, 1.0);
+  background:url("../img/bg_fusion.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -45,6 +48,7 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
+  background-color: rgba(22, 22, 22, 1.0);
   background: url("../img/DBD_scr_road_2.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -403,6 +407,7 @@
 body {
   font-family: 'Nunito';
   letter-spacing: 0.0625em;
+  background-color: rgba(22, 22, 22, 1.0);
 }
 
 a {
