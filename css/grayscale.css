@@ -17,28 +17,20 @@ header {
     display: none; 
 }
 
-/* Centered text */
-.centered {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -20%);
-  font-size: 90%;
-  -webkit-text-stroke: 0.3px gray;
-  text-shadow: 0 1px 0 black;
-  -webkit-text-fill-color: white;
+.contact-section {
+  padding: 4rem 0 0;
 }
 
-.centered-subtitle {
-  width: 60%;
-  position: relative;
-  top: 31%;
-  left: 50%;
-  transform: translate(-50%, -30%);
-  font-size: 90%;
-  -webkit-text-stroke: 0.1px black;
-  text-shadow: 0 1px 0 black;
-  -webkit-text-fill-color: white;
+.contact-section .social {
+  margin-top: 1.5rem;
+}
+
+.contact-section .social a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-section .social a:active {
+  color: #fff;
 }
 
 .fusion-div {
@@ -84,6 +76,323 @@ header {
 	  border-width: .25rem;
 	  width: 200%;
 	  margin-left: -50%;
+	}
+}
+
+/* text responsive positioning depend on device sizes */
+
+/* #### Mobile Phones Portrait #### */
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+	.centered {
+	  position: absolute;
+	  top: 5%;
+	  left: 50%;
+	  transform: translate(-50%, -5%);
+	  font-size: 90%;
+	  -webkit-text-stroke: 0.3px gray;
+	  text-shadow: 0 1px 0 black;
+	  -webkit-text-fill-color: white;
+	}
+	
+	.centered-subtitle {
+	  width: 80%;
+	  height: auto;
+	  position: absolute;
+	  top: 30%;
+	  left: 50%;
+	  transform: translate(-50%, -30%);
+	  font-size: 90%;
+	  -webkit-text-stroke: 0.1px black;
+	  text-shadow: 0 1px 0 black;
+	  -webkit-text-fill-color: white;
+	}
+	
+	.contact-section .social a {
+	  text-align: center;
+	  height: 2rem;
+	  width: 2rem;
+	  background: rgba(255, 255, 255, 0.1);
+	  border-radius: 100%;
+	  line-height: 2rem;
+	  color: rgba(255, 255, 255, 0.3);
+	  margin-left: 4px;
+	  margin-right: 4px;
+	}
+}
+
+/* #### Mobile Phones Landscape #### */
+@media screen and (max-device-width: 640px) and (orientation: landscape){
+	
+	.centered {
+	  position: absolute;
+	  top: 5%;
+	  left: 50%;
+	  transform: translate(-50%, -5%);
+	  font-size: 90%;
+	  -webkit-text-stroke: 0.3px gray;
+	  text-shadow: 0 1px 0 black;
+	  -webkit-text-fill-color: white;
+	}
+	
+	.centered-subtitle {
+	  width: 80%;
+	  height: auto;
+	  position: absolute;
+	  top: 30%;
+	  left: 50%;
+	  transform: translate(-50%, -30%);
+	  font-size: 90%;
+	  -webkit-text-stroke: 0.1px black;
+	  text-shadow: 0 1px 0 black;
+	  -webkit-text-fill-color: white;
+	}
+	
+	.contact-section .social a {
+	  text-align: center;
+	  height: 2rem;
+	  width: 2rem;
+	  background: rgba(255, 255, 255, 0.1);
+	  border-radius: 100%;
+	  line-height: 2rem;
+	  color: rgba(255, 255, 255, 0.3);
+	  margin-left: 4px;
+	  margin-right: 4px;
+	}
+}
+
+/* #### Mobile Phones Portrait or Landscape #### */
+@media screen and (max-device-width: 640px){
+	.centered {
+	  position: absolute;
+	  top: 5%;
+	  left: 50%;
+	  transform: translate(-50%, -5%);
+	  font-size: 90%;
+	  -webkit-text-stroke: 0.3px gray;
+	  text-shadow: 0 1px 0 black;
+	  -webkit-text-fill-color: white;
+	}
+	
+	.centered-subtitle {
+	  width: 80%;
+	  height: auto;
+	  position: absolute;
+	  top: 40%;
+	  left: 50%;
+	  transform: translate(-50%, -40%);
+	  font-size: 90%;
+	  -webkit-text-stroke: 0.1px black;
+	  text-shadow: 0 1px 0 black;
+	  -webkit-text-fill-color: white;
+	}
+	
+	.contact-section .social a {
+	  text-align: center;
+	  height: 2rem;
+	  width: 2rem;
+	  background: rgba(255, 255, 255, 0.1);
+	  border-radius: 100%;
+	  line-height: 2rem;
+	  color: rgba(255, 255, 255, 0.3);
+	  margin-left: 4px;
+	  margin-right: 4px;
+	}
+}
+
+/* #### iPhone 4+ Portrait or Landscape #### */
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
+	.centered {
+	  position: absolute;
+	  top: 5%;
+	  left: 50%;
+	  transform: translate(-50%, -5%);
+	  font-size: 90%;
+	  -webkit-text-stroke: 0.3px gray;
+	  text-shadow: 0 1px 0 black;
+	  -webkit-text-fill-color: white;
+	}
+	
+	.centered-subtitle {
+	  width: 80%;
+	  height: auto;
+	  position: absolute;
+	  top: 30%;
+	  left: 50%;
+	  transform: translate(-50%, -30%);
+	  font-size: 90%;
+	  -webkit-text-stroke: 0.1px black;
+	  text-shadow: 0 1px 0 black;
+	  -webkit-text-fill-color: white;
+	}
+	
+	.contact-section .social a {
+	  text-align: center;
+	  height: 2rem;
+	  width: 2rem;
+	  background: rgba(255, 255, 255, 0.1);
+	  border-radius: 100%;
+	  line-height: 2rem;
+	  color: rgba(255, 255, 255, 0.3);
+	  margin-left: 4px;
+	  margin-right: 4px;
+	}
+}
+
+/* #### iPhone 5 Portrait or Landscape #### */
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
+	
+	.centered {
+	  position: absolute;
+	  top: 5%;
+	  left: 50%;
+	  transform: translate(-50%, -5%);
+	  font-size: 90%;
+	  -webkit-text-stroke: 0.3px gray;
+	  text-shadow: 0 1px 0 black;
+	  -webkit-text-fill-color: white;
+	}
+	
+	.centered-subtitle {
+	  width: 80%;
+	  height: auto;
+	  position: absolute;
+	  top: 30%;
+	  left: 50%;
+	  transform: translate(-50%, -30%);
+	  font-size: 90%;
+	  -webkit-text-stroke: 0.1px black;
+	  text-shadow: 0 1px 0 black;
+	  -webkit-text-fill-color: white;
+	}
+	
+	.contact-section .social a {
+	  text-align: center;
+	  height: 2rem;
+	  width: 2rem;
+	  background: rgba(255, 255, 255, 0.1);
+	  border-radius: 100%;
+	  line-height: 2rem;
+	  color: rgba(255, 255, 255, 0.3);
+	  margin-left: 4px;
+	  margin-right: 4px;
+	}
+}
+
+/* #### iPhone 6 and 6 plus Portrait or Landscape #### */
+@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3){
+	.centered {
+	  position: absolute;
+	  top: 5%;
+	  left: 50%;
+	  transform: translate(-50%, -5%);
+	  font-size: 90%;
+	  -webkit-text-stroke: 0.3px gray;
+	  text-shadow: 0 1px 0 black;
+	  -webkit-text-fill-color: white;
+	}
+	
+	.centered-subtitle {
+	  width: 80%;
+	  height: auto;
+	  position: absolute;
+	  top: 30%;
+	  left: 50%;
+	  transform: translate(-50%, -30%);
+	  font-size: 90%;
+	  -webkit-text-stroke: 0.1px black;
+	  text-shadow: 0 1px 0 black;
+	  -webkit-text-fill-color: white;
+	}
+	
+	.contact-section .social a {
+	  text-align: center;
+	  height: 2rem;
+	  width: 2rem;
+	  background: rgba(255, 255, 255, 0.1);
+	  border-radius: 100%;
+	  line-height: 2rem;
+	  color: rgba(255, 255, 255, 0.3);
+	  margin-left: 4px;
+	  margin-right: 4px;
+	}
+}
+
+/* #### Tablets Portrait or Landscape #### */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+	.centered {
+	  position: absolute;
+	  top: 15%;
+	  left: 50%;
+	  transform: translate(-50%, -15%);
+	  font-size: 90%;
+	  -webkit-text-stroke: 0.3px gray;
+	  text-shadow: 0 1px 0 black;
+	  -webkit-text-fill-color: white;
+	}
+	
+	.centered-subtitle {
+	  width: 60%;
+	  height: auto;
+	  position: relative;
+	  top: 31%;
+	  left: 50%;
+	  transform: translate(-50%, -30%);
+	  font-size: 90%;
+	  -webkit-text-stroke: 0.1px black;
+	  text-shadow: 0 1px 0 black;
+	  -webkit-text-fill-color: white;
+	}
+	
+	.contact-section .social a {
+	  text-align: center;
+	  height: 3rem;
+	  width: 3rem;
+	  background: rgba(255, 255, 255, 0.1);
+	  border-radius: 100%;
+	  line-height: 3rem;
+	  color: rgba(255, 255, 255, 0.3);
+	  margin-left: 4px;
+	  margin-right: 4px;
+	}
+}
+
+/* #### Desktops #### */
+@media screen and (min-width: 1024px){
+	
+	.centered {
+	  position: absolute;
+	  top: 20%;
+	  left: 50%;
+	  transform: translate(-50%, -20%);
+	  font-size: 90%;
+	  -webkit-text-stroke: 0.3px gray;
+	  text-shadow: 0 1px 0 black;
+	  -webkit-text-fill-color: white;
+	}
+	
+	.centered-subtitle {
+	  width: 60%;
+	  height: auto;
+	  position: relative;
+	  top: 31%;
+	  left: 50%;
+	  transform: translate(-50%, -30%);
+	  font-size: 90%;
+	  -webkit-text-stroke: 0.1px black;
+	  text-shadow: 0 1px 0 black;
+	  -webkit-text-fill-color: white;
+	}
+	
+	.contact-section .social a {
+	  text-align: center;
+	  height: 3rem;
+	  width: 3rem;
+	  background: rgba(255, 255, 255, 0.1);
+	  border-radius: 100%;
+	  line-height: 3rem;
+	  color: rgba(255, 255, 255, 0.3);
+	  margin-left: 4px;
+	  margin-right: 4px;
 	}
 }
 
@@ -387,34 +696,6 @@ header {
     border-width: .25rem;
     width: 30%;
   }
-}
-
-.contact-section {
-  padding: 4rem 0 0;
-}
-
-.contact-section .social {
-  margin-top: 1.5rem;
-}
-
-.contact-section .social a {
-  text-align: center;
-  height: 3rem;
-  width: 3rem;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 100%;
-  line-height: 3rem;
-  color: rgba(255, 255, 255, 0.3);
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
-.contact-section .social a:hover {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.contact-section .social a:active {
-  color: #fff;
 }
 
 body {
