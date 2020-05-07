@@ -82,6 +82,15 @@ header {
 
 /* #### Mobile Phones Portrait #### */
 @media screen and (max-device-width: 480px) and (orientation: portrait){
+	.centered-head-button {
+	  width: auto;
+	  height: auto;
+	  position: absolute;
+	  top: 90%;
+	  left: 50%;
+	  transform: translate(-50%, -90%);
+	}
+	
 	.centered {
 	  position: absolute;
 	  top: 5%;
@@ -122,6 +131,15 @@ header {
 /* #### Mobile Phones Landscape #### */
 @media screen and (max-device-width: 640px) and (orientation: landscape){
 	
+	.centered-head-button {
+	  width: auto;
+	  height: auto;
+	  position: absolute;
+	  top: 90%;
+	  left: 50%;
+	  transform: translate(-50%, -90%);
+	}
+	
 	.centered {
 	  position: absolute;
 	  top: 5%;
@@ -161,6 +179,16 @@ header {
 
 /* #### Mobile Phones Portrait or Landscape #### */
 @media screen and (max-device-width: 640px){
+	
+	.centered-head-button {
+	  width: auto;
+	  height: auto;
+	  position: absolute;
+	  top: 90%;
+	  left: 50%;
+	  transform: translate(-50%, -90%);
+	}
+	
 	.centered {
 	  position: absolute;
 	  top: 5%;
@@ -200,6 +228,16 @@ header {
 
 /* #### iPhone 4+ Portrait or Landscape #### */
 @media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
+	
+	.centered-head-button {
+	  width: auto;
+	  height: auto;
+	  position: absolute;
+	  top: 90%;
+	  left: 50%;
+	  transform: translate(-50%, -90%);
+	}
+	
 	.centered {
 	  position: absolute;
 	  top: 5%;
@@ -240,6 +278,15 @@ header {
 /* #### iPhone 5 Portrait or Landscape #### */
 @media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
 	
+	.centered-head-button {
+	  width: auto;
+	  height: auto;
+	  position: absolute;
+	  top: 90%;
+	  left: 50%;
+	  transform: translate(-50%, -90%);
+	}
+	
 	.centered {
 	  position: absolute;
 	  top: 5%;
@@ -279,6 +326,15 @@ header {
 
 /* #### iPhone 6 and 6 plus Portrait or Landscape #### */
 @media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3){
+	.centered-head-button {
+	  width: auto;
+	  height: auto;
+	  position: absolute;
+	  top: 90%;
+	  left: 50%;
+	  transform: translate(-50%, -90%);
+	}
+	
 	.centered {
 	  position: absolute;
 	  top: 5%;
@@ -318,6 +374,15 @@ header {
 
 /* #### Tablets Portrait or Landscape #### */
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+	.centered-head-button {
+	  width: auto;
+	  height: auto;
+	  position: absolute;
+	  top: 75%;
+	  left: 50%;
+	  transform: translate(-50%, -75%);
+	}
+	
 	.centered {
 	  position: absolute;
 	  top: 15%;
@@ -357,6 +422,15 @@ header {
 
 /* #### Desktops #### */
 @media screen and (min-width: 1024px){
+	
+	.centered-head-button {
+	  width: auto;
+	  height: auto;
+	  position: absolute;
+	  top: 65%;
+	  left: 50%;
+	  transform: translate(-50%, -65%);
+	}
 	
 	.centered {
 	  position: absolute;
