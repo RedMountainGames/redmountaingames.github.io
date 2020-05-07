@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Red Mountain Games Official Web Site">
   <meta name="author" content="RedMountainGames">
-  
+
   <title>Red Mountain Games</title>
 
   <!-- Bootstrap core CSS -->
@@ -21,9 +21,9 @@
   <!-- Custom styles for this template -->
   <link href="css/grayscale.css" rel="stylesheet">
   <script src="vendor/jquery/jquery.min.js"></script>
-  
+
   <link rel="icon" href="img/icon.ico">
-  
+
   <script language="javascript">
 	var scrolling = false;
 	var currentPos = 0;
@@ -38,11 +38,11 @@
                 scrollTop: $(scrollToElement).offset().top - 70
             }, 500, function(){
                 scrolling = false;
-            });      
+            });
         }
-    }   
+    }
 
-    function scrollDown(){   
+    function scrollDown(){
         if(!scrolling && currentPos < $('.scrollTo').length-1  ){
             scrolling=true;
             currentPos ++;
@@ -52,9 +52,9 @@
                 scrollTop: $(scrollToElement).offset().top - 70
             }, 500,function(){
                 scrolling = false;
-            }); 
+            });
         }
-    }    
+    }
 
     $(document).ready(function() {
         for( var i = 0; i < $('.scrollTo').length; i++){
@@ -69,7 +69,7 @@
             if(e.originalEvent.detail > 0) {
                 scrollDown();
             }else {
-                scrollUp();   
+                scrollUp();
             }
             return false;
         });
@@ -78,12 +78,31 @@
             if(e.originalEvent.wheelDelta < 0) {
                 scrollDown();
             }else {
-                scrollUp();     
+                scrollUp();
             }
             return false;
         });
     });
   </script>
+
+  <script type="text/javascript">
+	$(document).ready(function() {
+
+		$("a.transition").click(function(event){
+			event.preventDefault();
+			linkLocation = this.href;
+
+			$("body").fadeOut(1000, function() {
+				redirectPage();
+			}); 
+			$("body").fadeIn(1000);
+		});
+
+		function redirectPage() {
+			window.location = linkLocation;
+		}
+	});
+	</script>
 
 </head>
 
@@ -106,13 +125,13 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item-special">
-            <a class="nav-link js-scroll-trigger" href="#about">Who We Are</a>
+            <a class="nav-link js-scroll-trigger" href="#who_we_are">Who We Are</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">Games</a>
+            <a class="nav-link js-scroll-trigger" href="#games">Games</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
+            <a class="nav-link js-scroll-trigger" href="#contacts">Contact</a>
           </li>
         </ul>
       </div>
@@ -131,7 +150,7 @@
   </header>
 
   <!-- About Section -->
-   <section id="about" class="about-section bg-light scrollTo">
+   <section id="who_we_are" class="about-section bg-light scrollTo">
     <div class="container">
 
 		<div class="row align-items-center no-gutters mb-4 mb-lg-5">
@@ -151,40 +170,42 @@
 	</div>
    </section>
 
-	<div class="fusion-div scrollTo" id="projects">
+	<div class="fusion-div scrollTo" id="games">
 		<div class="centered">
 			<!-- <a href="fusion.html" target="_blank"> -->
 				<h4 class="text-white">Fusion</h4>
 			<!-- </a> -->
 			<hr class="">
 		</div>
-		
+
 		<div class="centered-subtitle">
             <p class="text-white-50 text-justify">
-				Fusion is a third-person shooter with elements of Survival Horror. Events takes place at the station Black Mountain - the heart 
-				of a modern military research centre directed by scientist Natasha Melnyk. After accident the acient forces has been 
-				unleashed. Now Natasha's life won't be the same. 
+				Fusion is a third-person shooter with elements of Survival Horror. Events takes place at the station Black Mountain - the heart
+				of a modern military research centre directed by scientist Natasha Melnyk. After accident the acient forces has been
+				unleashed. Now Natasha's life won't be the same.
 			</p>
         </div>
-	</div> 
-	
+	</div>
+
 	<div class="dbd-div scrollTo">
 		<div class="centered">
-			<h4 class="text-white">Dead by Design</h4>
-			<hr class="">
+			<a href="dbd.html" class="transition">
+				<h4 class="text-white">Dead by Design</h4>
+				<hr class="">
+			</a>
 		</div>
-		
+
 		<div class="centered-subtitle">
             <p class="text-white-50 text-justify">
-				Dead by Design is a first-person action-adventure game. After a long term of punishment, the Divinus and his partner move to 
-				Island to finish their last case. But how exactly the case will end depends on your skills, ability management or stealth. Solve 
+				Dead by Design is a first-person action-adventure game. After a long term of punishment, the Divinus and his partner move to
+				Island to finish their last case. But how exactly the case will end depends on your skills, ability management or stealth. Solve
 				the case and bring the peace to magestic open-world filled of nature.
 			</p>
         </div>
-	</div> 
-  
+	</div>
+
   <!-- Contact Section -->
-  <section class="contact-section bg-black scrollTo" id="signup">
+  <section class="contact-section bg-black scrollTo" id="contacts">
     <div class="container">
 
       <div class="featured-text text-center text-white">
