@@ -120,6 +120,18 @@ header {
 	  text-shadow: 0 1px 0 black;
 	  -webkit-text-fill-color: white;
 	}
+	
+	.contact-section .social a {
+	  text-align: center;
+	  height: 2rem;
+	  width: 2rem;
+	  background: rgba(255, 255, 255, 0.1);
+	  border-radius: 100%;
+	  line-height: 2rem;
+	  color: rgba(255, 255, 255, 0.3);
+	  margin-left: 4px;
+	  margin-right: 4px;
+	}
 }
 
 /* #### Mobile Phones Landscape #### */
@@ -155,6 +167,18 @@ header {
 	  -webkit-text-stroke: 0.1px black;
 	  text-shadow: 0 1px 0 black;
 	  -webkit-text-fill-color: white;
+	}
+	
+	.contact-section .social a {
+	  text-align: center;
+	  height: 2rem;
+	  width: 2rem;
+	  background: rgba(255, 255, 255, 0.1);
+	  border-radius: 100%;
+	  line-height: 2rem;
+	  color: rgba(255, 255, 255, 0.3);
+	  margin-left: 4px;
+	  margin-right: 4px;
 	}
 }
 
@@ -192,6 +216,18 @@ header {
 	  text-shadow: 0 1px 0 black;
 	  -webkit-text-fill-color: white;
 	}
+	
+	.contact-section .social a {
+	  text-align: center;
+	  height: 2rem;
+	  width: 2rem;
+	  background: rgba(255, 255, 255, 0.1);
+	  border-radius: 100%;
+	  line-height: 2rem;
+	  color: rgba(255, 255, 255, 0.3);
+	  margin-left: 4px;
+	  margin-right: 4px;
+	}
 }
 
 /* #### iPhone 4+ Portrait or Landscape #### */
@@ -227,6 +263,18 @@ header {
 	  -webkit-text-stroke: 0.1px black;
 	  text-shadow: 0 1px 0 black;
 	  -webkit-text-fill-color: white;
+	}
+	
+	.contact-section .social a {
+	  text-align: center;
+	  height: 2rem;
+	  width: 2rem;
+	  background: rgba(255, 255, 255, 0.1);
+	  border-radius: 100%;
+	  line-height: 2rem;
+	  color: rgba(255, 255, 255, 0.3);
+	  margin-left: 4px;
+	  margin-right: 4px;
 	}
 }
 
@@ -264,6 +312,18 @@ header {
 	  text-shadow: 0 1px 0 black;
 	  -webkit-text-fill-color: white;
 	}
+	
+	.contact-section .social a {
+	  text-align: center;
+	  height: 2rem;
+	  width: 2rem;
+	  background: rgba(255, 255, 255, 0.1);
+	  border-radius: 100%;
+	  line-height: 2rem;
+	  color: rgba(255, 255, 255, 0.3);
+	  margin-left: 4px;
+	  margin-right: 4px;
+	}
 }
 
 /* #### iPhone 6 and 6 plus Portrait or Landscape #### */
@@ -299,6 +359,18 @@ header {
 	  -webkit-text-stroke: 0.1px black;
 	  text-shadow: 0 1px 0 black;
 	  -webkit-text-fill-color: white;
+	}
+	
+	.contact-section .social a {
+	  text-align: center;
+	  height: 2rem;
+	  width: 2rem;
+	  background: rgba(255, 255, 255, 0.1);
+	  border-radius: 100%;
+	  line-height: 2rem;
+	  color: rgba(255, 255, 255, 0.3);
+	  margin-left: 4px;
+	  margin-right: 4px;
 	}
 }
 
@@ -336,6 +408,18 @@ header {
 	  text-shadow: 0 1px 0 black;
 	  -webkit-text-fill-color: white;
 	}
+	
+	.contact-section .social a {
+	  text-align: center;
+	  height: 3rem;
+	  width: 3rem;
+	  background: rgba(255, 255, 255, 0.1);
+	  border-radius: 100%;
+	  line-height: 3rem;
+	  color: rgba(255, 255, 255, 0.3);
+	  margin-left: 4px;
+	  margin-right: 4px;
+	}
 }
 
 /* #### Desktops #### */
@@ -371,6 +455,18 @@ header {
 	  -webkit-text-stroke: 0.1px black;
 	  text-shadow: 0 1px 0 black;
 	  -webkit-text-fill-color: white;
+	}
+	
+	.contact-section .social a {
+	  text-align: center;
+	  height: 3rem;
+	  width: 3rem;
+	  background: rgba(255, 255, 255, 0.1);
+	  border-radius: 100%;
+	  line-height: 3rem;
+	  color: rgba(255, 255, 255, 0.3);
+	  margin-left: 4px;
+	  margin-right: 4px;
 	}
 }
 
@@ -678,18 +774,6 @@ header {
 
 .contact-section .social {
   margin-top: 1.5rem;
-}
-
-.contact-section .social a {
-  text-align: center;
-  height: 3rem;
-  width: 3rem;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 100%;
-  line-height: 3rem;
-  color: rgba(255, 255, 255, 0.3);
-  margin-left: 4px;
-  margin-right: 4px;
 }
 
 .contact-section .social a:hover {
