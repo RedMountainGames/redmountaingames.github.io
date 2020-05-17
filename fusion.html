@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Fusion Game Official Web Site">
+  <meta name="author" content="RedMountainGames">
+
+  <title>Fusion</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/fusion.css" rel="stylesheet">
+  <script src="vendor/jquery/jquery.min.js"></script>
+
+  <link rel="icon" href="img/icon.ico">
+
+  <script language="javascript">
+	var scrolling = false;
+	var currentPos = 0;
+
+    function scrollUp(){
+        if(!scrolling && currentPos > 0 ){
+            scrolling=true;
+            currentPos --;
+            var scrollToElement = $('.scrollTo')[currentPos];
+
+            $('html, body').animate({
+                scrollTop: $(scrollToElement).offset().top - 70
+            }, 500, function(){
+                scrolling = false;
+            });
+        }
+    }
+
+    function scrollDown(){
+        if(!scrolling && currentPos < $('.scrollTo').length-1  ){
+            scrolling=true;
+            currentPos ++;
+            var scrollToElement = $('.scrollTo')[currentPos];
+
+            $('html, body').animate({
+                scrollTop: $(scrollToElement).offset().top - 70
+            }, 500,function(){
+                scrolling = false;
+            });
+        }
+    }
+
+    $(document).ready(function() {
+        for( var i = 0; i < $('.scrollTo').length; i++){
+            var elm = $('.scrollTo')[i];
+
+            if( $(document).scrollTop() - 70 >= $(elm).offset().top ){
+                currentPos = i;
+            }
+        }
+
+        $(document).bind('DOMMouseScroll', function(e){
+            if(e.originalEvent.detail > 0) {
+                scrollDown();
+            }else {
+                scrollUp();
+            }
+            return false;
+        });
+
+        $(document).bind('mousewheel', function(e){
+            if(e.originalEvent.wheelDelta < 0) {
+                scrollDown();
+            }else {
+                scrollUp();
+            }
+            return false;
+        });
+    });
+
+
+	$("button").click(function () {
+    $("#content").hide();
+    $("#yt")[0].src += "?autoplay=1";
+    $("#yt").show();
+    });
+
+  </script>
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-black fixed-top" id="mainNav">
+    <div class="container">
+
+	  <a class="navbar-brand js-scroll-trigger" href="#page-top">
+		<div class="col-lg-4">
+          <img class="img-fluid navbar-brand" src="img/logo_title_fusion.png" alt="">
+        </div>
+	  </a>
+
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#world">World</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#gameplay">Gameplay</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+
+  <header class="masthead scrollTo">
+
+	<video autoplay muted loop no-controls class="video-background" poster="img/bg_fusion.png">
+		<source src="movies/fusion1.mp4" type="video/mp4">
+	</video>
+
+    <div class="container d-flex align-items-center">
+      <div class="mx-auto text-center">
+
+		<div class="centered-head-button">
+			<a href="#trailer" class="btn btn-primary js-scroll-trigger">Watch Teaser Trailer</a>
+		</div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Black Mountain -->
+	<div class="trailer-div scrollTo embed-responsive" id="trailer">
+		<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/e29VW9ReCqU"></iframe>
+	</div>
+
+	<!-- Black Mountain -->
+	<div class="blackmountain-div scrollTo" id="about">
+		<div class="centered">
+			<h4 class="text-white">About</h4>
+			<hr class="">
+		</div>
+
+		<div class="centered-subtitle">
+            <p class="text-white-0 text-justify">
+				<br>
+				Fusion is a third-person shooter game with elements of Survival Horror developing by Red Mountain Games studio.
+				Game currently is in a active development state and supose to release under PC platform.
+				All in-game footage is a work in progress made with Unreal Engine 4 and does not represent the final look of the game.
+				</br>
+			</p>
+        </div>
+	</div>
+
+	<!-- World -->
+	<div class="earthquake-div scrollTo" id="world">
+		<div class="centered">
+			<h4 class="text-white">World</h4>
+			<hr class="">
+		</div>
+
+		<div class="centered-subtitle">
+            <p class="text-white-50 text-justify">				
+				Your journey begins from the station Black Mountain.
+				Station Black Mountain is a modern military research centre created by one of the most powerful corporation called Protonesis.
+				After 2064 there was founded the cave with strange electromagnetic properties.
+				The properties was exactly useful for a station needs.
+				Researches in electromagnetics and biology never be so close to produce next-gen virus based on sound waves propagation and human brain activity.
+				</br>
+			</p>
+        </div>
+	</div>
+
+	<!-- Gameplay -->
+	<div class="gameplay-div scrollTo" id="gameplay">
+		<div class="centered">
+			<h4 class="text-white">Gameplay</h4>
+			<hr class="">
+		</div>
+
+		<div class="centered-subtitle">
+            <p class="text-white-50 text-justify">
+				Fusion designed as classic third-person shooter game with elements of survival. 
+				Survival mechanics is created by slow down character movement and resource limiting.
+				Usage of items and environment placed on the station would provide to the players more opportunity to destroy and/or entrap enemies.
+				Currently game and mechanics is under active development, stay tuned for our updates.
+			</p>
+        </div>
+	</div>
+
+  <!-- Contact Section -->
+  <section class="contact-section bg-black scrollTo" id="contact">
+    <div class="container">
+
+      <div class="featured-text text-center text-white">
+          <h4>Contact with Us</h4>
+	  </div>
+
+      <div class="social d-flex justify-content-center">
+        <a href="https://twitter.com/RedMountainqame" target="_blank" class="mx-2">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.reddit.com/user/RedMountainGames" target="_blank" class="mx-2">
+          <i class="fab fa-reddit"></i>
+        </a>
+		<a href="https://www.instagram.com/red_mountain_games" target="_blank" class="max-2">
+		  <i class="fab fa-instagram"></i>
+		</a>
+		<a href="https://www.pinterest.com/redmountaingames/" target="_blank" class="mx-2">
+		  <i class="fab fa-pinterest"></i>
+		</a>
+		<a href="https://www.youtube.com/channel/UCi7oKdEY4Q2BuDWv2uLPwxw?view_as=subscriber" target="_blank" class="mx-2">
+		  <i class="fab fa-youtube"></i>
+		</a>
+        <a href="mailto:rmg.kontakt@gmail.com" class="mx-2">
+          <i class="fa fa-envelope"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black small text-center text-white-50">
+    <div class="container">
+      Copyright &copy; Red Mountain Games 2020
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/grayscale.min.js"></script>
+
+</body>
+
+</html>
