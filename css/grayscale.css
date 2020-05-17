@@ -38,8 +38,7 @@ header {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background-color: rgba(22, 22, 22, 1.0);
-  background:url("../img/bg_fusion.png");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.4) 75%, #161616 100%), url("../img/Fusion_scr_Robot_2.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -611,7 +610,7 @@ header {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/DBD_scr_road_2.png");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.4) 75%, #161616 100%), url("../img/Fusion_scr_Robot_1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
