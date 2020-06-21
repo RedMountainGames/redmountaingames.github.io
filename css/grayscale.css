@@ -527,6 +527,10 @@ header {
     padding: 2rem 1.5rem;
     color: rgba(255, 255, 255, 0.5);
   }
+  #mainNav .nav-link .patreon {
+	color: white;
+  }
+  
   #mainNav .nav-link:hover {
     color: rgba(255, 255, 255, 0.75);
   }
@@ -539,7 +543,7 @@ header {
   #mainNav.navbar-shrink .navbar-brand {
     color: #161616;
   }
-  #mainNav.navbar-shrink .nav-link {
+  #mainNav.navbar-shrink .nav-link{
     color: rgba(255, 255, 255, 0.5);
     padding: 1.5rem 1.5rem 1.25rem;
     border-bottom: 0.25rem solid transparent;
@@ -663,6 +667,16 @@ header {
   text-transform: uppercase;
   letter-spacing: .15rem;
   border: 0;
+}
+
+.btn-patreon {
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  font-family: 'Varela Round';
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  border: 0;
+  border-color: rgba(1,1,1,0);
 }
 
 .btn-primary {
