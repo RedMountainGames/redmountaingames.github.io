@@ -1,275 +1,290 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
 
-<head>
+    <!--Page Title-->
+    <title>Red Mountain Games Official</title>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Red Mountain Games Official Web Site">
-  <meta name="author" content="RedMountainGames">
+    <!--Meta Keywords and Description-->
+    <meta name="keywords" content="rmg red mountain games gamedev indie">
+    <meta name="description" content="Red Mountain Games Official Website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
 
-  <title>Red Mountain Games</title>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.ico" title="Favicon"/>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Main CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
 
-  <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <!-- Namari Color CSS -->
+    <link rel="stylesheet" href="css/namari-color.css">
 
-  <!-- Custom styles for this template -->
-  <link href="css/grayscale.css" rel="stylesheet">
-  <script src="vendor/jquery/jquery.min.js"></script>
+    <!--Icon Fonts - Font Awesome Icons-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 
-  <link rel="icon" href="img/icon.ico">
+    <!-- Animate CSS-->
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
 
-  <script language="javascript">
-	var scrolling = false;
-	var currentPos = 0;
-
-    function scrollUp(){
-        if(!scrolling && currentPos > 0 ){
-            scrolling=true;
-            currentPos --;
-            var scrollToElement = $('.scrollTo')[currentPos];
-
-            $('html, body').animate({
-                scrollTop: $(scrollToElement).offset().top - 70
-            }, 500, function(){
-                scrolling = false;
-            });
-        }
-    }
-
-    function scrollDown(){
-        if(!scrolling && currentPos < $('.scrollTo').length-1  ){
-            scrolling=true;
-            currentPos ++;
-            var scrollToElement = $('.scrollTo')[currentPos];
-
-            $('html, body').animate({
-                scrollTop: $(scrollToElement).offset().top - 70
-            }, 500,function(){
-                scrolling = false;
-            });
-        }
-    }
-
-    $(document).ready(function() {
-        for( var i = 0; i < $('.scrollTo').length; i++){
-            var elm = $('.scrollTo')[i];
-
-            if( $(document).scrollTop() - 70 >= $(elm).offset().top ){
-                currentPos = i;
-            }
-        }
-
-        $(document).bind('DOMMouseScroll', function(e){
-            if(e.originalEvent.detail > 0) {
-                scrollDown();
-            }else {
-                scrollUp();
-            }
-            return false;
-        });
-
-        $(document).bind('mousewheel', function(e){
-            if(e.originalEvent.wheelDelta < 0) {
-                scrollDown();
-            }else {
-                scrollUp();
-            }
-            return false;
-        });
-    });
-  </script>
-
-  <script type="text/javascript">
-	$(document).ready(function() {
-
-		$("a.transition").click(function(event){
-			event.preventDefault();
-			linkLocation = this.href;
-
-			$("body").fadeOut(1000, function() {
-				redirectPage();
-			}); 
-			$("body").fadeIn(1000);
-		});
-
-		function redirectPage() {
-			window.location = linkLocation;
-		}
-	});
-	</script>
-
+    <!--Google Webfonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 </head>
+<body>
 
-<body id="page-top">
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-black fixed-top" id="mainNav">
-    <div class="container">
-
-	  <a class="navbar-brand js-scroll-trigger" href="#page-top">
-		<div class="col-lg-4">
-          <img class="img-fluid navbar-brand" src="img/logo_title.png" alt="">
-        </div>
-	  </a>
-
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item-special">
-            <a class="nav-link js-scroll-trigger" href="#who_we_are">Who We Are</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#games">Games</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contacts">Contact</a>
-          </li>
-		  <button type="button" class="btn-patreon btn-primary btn-sm" onclick="window.open('https://www.patreon.com/RedMountainGames')">Patreon</button>
-        </ul>
-      </div>
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status" class="la-ball-triangle-path">
+        <div></div>
+        <div></div>
+        <div></div>
     </div>
-  </nav>
+</div>
+<!--End of Preloader-->
 
-  <!-- Header -->
-  <header class="masthead scrollTo">
-    <div class="container d-flex h-100 align-items-center">
-      <div class="centered-head-button">
+<div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
+    <div class="top-border wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;"></div>
+    <div class="right-border wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;"></div>
+    <div class="bottom-border wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"></div>
+    <div class="left-border wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;"></div>
+</div>
 
-        <a href="#who_we_are" class="btn  btn-primary js-scroll-trigger">Who We Are</a>
+<div id="wrapper">
 
-      </div>
-    </div>
-  </header>
+    <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
+        <div id="header" class="nav-collapse">
+            <div class="row clearfix">
+                <div class="col-1">
 
-  <!-- About Section -->
-   <section id="who_we_are" class="about-section bg-light scrollTo">
-    <div class="container">
+                    <!--Logo-->
+                    <div id="logo">
 
-		<div class="row align-items-center no-gutters mb-4 mb-lg-5">
-			<div class="col-xl-8 col-lg-7">
-			  <img class="img-fluid mb-3 mb-lg-10" src="img/about.png" alt="">
-			</div>
-        <div class="col-xl-4 col-lg-5">
-          <div class="featured-text text-center text-lg-left">
-          <h4>Who We Are</h4>
-          <p class="text-50 mb-0">Red Mountain Games is a game development studio located at Uzhhorod, Ukraine.
-		  Our studio is composed of a group of ambitious and creative enthusiasts who want to deliver
-		  high-quality narrative and gameplay experience to the players around the world.</p>
-		  </div>
+                        <!--Logo that is shown on the banner-->
+                        <img src="images/logo_rmg.png" id="banner-logo" alt="Landing Page"/>
+                        <!--End of Banner Logo-->
+
+                        <!--The Logo that is shown on the sticky Navigation Bar-->
+                        <img src="images/logo_rmg.png" id="navigation-logo" alt="Landing Page"/>
+                        <!--End of Navigation Logo-->
+
+                    </div>
+                    <!--End of Logo-->
+
+                    <aside>
+					
+                        <!--Social Icons in Header-->
+                        <ul class="social-icons">
+                            <li>
+                                <a target="_blank" title="Twitter" href="https://twitter.com/RedMountainGame">
+                                    <i class="fa fa-twitter fa-1x"></i><span>Twitter</span>
+                                </a>
+                            </li>
+							<li>
+								<a target="_blank" title="Facebook" href="https://www.facebook.com/Red-Mountain-Games-105828404571144/">
+									<i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
+								</a>
+							</li>
+                            <li>
+                                <a target="_blank" title="Instagram" href="https://www.instagram.com/red_mountain_games">
+                                    <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" title="YouTube" href="https://www.youtube.com/channel/UCi7oKdEY4Q2BuDWv2uLPwxw?view_as=subscriber">
+                                    <i class="fa fa-youtube fa-1x"></i><span>YouTube</span>
+                                </a>
+                            </li>
+							<li>
+                                <a target="_blank" title="Pinterest" href="https://www.pinterest.com/redmountaingames/">
+                                    <i class="fa fa-pinterest fa-1x"></i><span>Pinterest</span>
+                                </a>
+                            </li>
+							<li>
+                                <a target="_blank" title="Reddit" href="https://www.reddit.com/user/RedMountainGames/">
+                                    <i class="fa fa-reddit fa-1x"></i><span>Reddit</span>
+                                </a>
+                            </li>
+							<li>
+                                <a target="_blank" title="Email" href="mailto:rmg.kontakt@gmail.com">
+                                    <i class="fa fa-envelope fa-1x"></i><span>Email</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!--End of Social Icons in Header-->
+
+                    </aside>
+
+                    <!--Main Navigation-->
+                    <nav id="nav-main">
+                        <ul>
+							<li>
+                                <a href="#banner">Home</a>
+                            </li>
+							<li>
+                                <a href="#services">Who We Are</a>
+                            </li>
+							<li>
+                                <a href="#testimonials">Games</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!--End of Main Navigation-->
+
+                    <div id="nav-trigger"><span></span></div>
+                    <nav id="nav-mobile"></nav>
+
+                </div>
+            </div>
+        </div><!--End of Header-->
+
+        <!--Banner Content-->
+        <div id="banner-content" class="row clearfix">
+
+            <div class="col-38">
+
+                <div class="section-heading">
+                    <h1>FROM UKRAINE WITH LOVE</h1>
+
+
+                </div>
+
+                <!--Call to Action-->
+                <a href="https://www.patreon.com/RedMountainGames" target="_blank" class="button">JOIN US ON PATREON!</a>
+                <!--End Call to Action-->
+
+            </div>
+
+        </div><!--End of Row-->
+    </header>
+
+    <!--Main Content Area-->
+    <main id="content">
+
+
+		<!--Content Section-->
+        <div id="services" class="scrollto clearfix">
+
+            <div class="row no-padding-bottom clearfix">
+
+                <!--Content of the Right Side-->
+                <div class="col-2">
+                    <div class="section-heading">
+                        <h2 class="section-title">WHO WE ARE</h2>
+                        <p class="section-subtitle">Red Mountain Games is an indie game development studio located at Kiev, Ukraine. 
+						Our studio is composed of a group of ambitious and creative enthusiasts who want to deliver high-quality narrative and gameplay 
+						experience to the players around the world.</p>
+                    </div>
+                    <p>
+                    </p>
+                </div>
+                <!--End Content Right Side-->
+
+                <div class="col-2">
+                    <img src="images/dancer.jpg" alt="Dancer"/>
+                </div>
+
+            </div>
+
+
         </div>
-		</div>
-
-	</div>
-   </section>
-
-	<div class="fusion-div scrollTo" id="games">
-		<div class="centered">
-			<!-- <a href="fusion.html" target="_blank"> -->
-				<h4 class="text-white">Fusion</h4>
-			<!-- </a> -->
-			<hr class="">
-		</div>
-
-		<div class="centered-subtitle">
-            <p class="text-white-50 text-justify">
-				Fusion is a third-person shooter with elements of Survival Horror.
-				Event takes place in 2064 year at the station Black Mountain - the heart of a modern military research center.
-				Players must find the way out of the station occupied by the ancient creatures.
-			</p>
-        </div>
-		
-		<div class="container d-flex h-20 align-items-center">
-		  <div class="mx-auto text-center">
-			<div class="centered-head-button">
-				<a href="fusion.html" class="btn btn-primary transition">More info</a>
-			</div>
-		  </div>
-		</div>
-	</div>
-<!--
-	<div class="dbd-div scrollTo">
-		<div class="centered">
-			<h4 class="text-white">Dead by Design</h4>
-			<hr class="">
-		</div>
-
-		<div class="centered-subtitle">
-            <p class="text-white-50 text-justify">
-				Dead by Design is a first-person action-adventure game. After a long term of punishment, the Divinus and his partner move to
-				Island to finish their last case. But how exactly the case will end depends on your skills, ability management or stealth. Solve
-				the case and bring the peace to majestic open-world filled of nature.
-			</p>
-        </div>
-		
-		<div class="container d-flex h-20 align-items-center">
-		  <div class="mx-auto text-center">
-			<div class="centered-head-button">
-				<a href="dbd.html" class="btn btn-primary transition">More info</a>
-			</div>
-		  </div>
-		</div>
-		-->
-	</div>
-
-  <!-- Contact Section -->
-  <section class="contact-section bg-black scrollTo" id="contacts">
-    <div class="container">
-
-      <div class="featured-text text-center text-white">
-          <h4>Contact with Us</h4>
-	  </div>
-
-      <div class="social d-flex justify-content-center">
-        <a href="https://twitter.com/RedMountainGame" target="_blank" class="mx-2">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="https://www.reddit.com/user/RedMountainGames" target="_blank" class="mx-2">
-          <i class="fab fa-reddit"></i>
-        </a>
-		<a href="https://www.instagram.com/red_mountain_games" target="_blank" class="max-2">
-		  <i class="fab fa-instagram"></i>
-		</a>
-		<a href="https://www.pinterest.com/redmountaingames/" target="_blank" class="mx-2">
-		  <i class="fab fa-pinterest"></i>
-		</a>
-		<a href="https://www.youtube.com/channel/UCi7oKdEY4Q2BuDWv2uLPwxw?view_as=subscriber" target="_blank" class="mx-2">
-		  <i class="fab fa-youtube"></i>
-		</a>
-        <a href="mailto:rmg.kontakt@gmail.com" class="mx-2">
-          <i class="fa fa-envelope"></i>
-        </a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-black small text-center text-white-50">
-    <div class="container">
-      Copyright &copy; Red Mountain Games 2020
-    </div>
-  </footer>
+        <!--End of Content Section-->
 
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<!--Testimonials-->
+        <aside id="testimonials" class="scrollto text-justify" data-enllax-ratio=".2">
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+            <div id="fusion-div" class="row clearfix" data-enllax-ratio=".5">
+                <div class="col-3">
+                </div>
 
-  <!-- Custom scripts for this template -->
-  <script src="js/grayscale.min.js"></script>
+                <!--Content of the Right Side-->
+                <div class="col-3">
+                    <div class="section-heading">
+                        <h2 class="section-title">FUSION</h2>
+                        <p class="section-subtitle">
+						Fusion is a third-person shooter with elements of Survival Horror. 
+						Event takes place in 2064 year at the station Black Mountain - the heart of a modern military research center.
+						Players must find the way out of the station occupied by the ancient creatures. 
+						</p>
+                    </div>
+                    <p>
+                    <a href="fusion.html" class="button" >MORE INFO</a>
+					</p>
+                </div>
+                <!--End Content Right Side-->
+				
+            </div>
+
+        </aside>
+        <!--End of Testimonials-->
+
+    </main>
+    <!--End Main Content Area-->
+
+
+    <!--Footer-->
+    <footer id="landing-footer" class="clearfix">
+		<center> 
+		    <div class="row clearfix">
+            <!--Social Icons in Footer-->
+            <ul class="col social-icons">
+					<li>
+						<a target="_blank" title="Twitter" href="https://twitter.com/RedMountainGame">
+							<i class="fa fa-twitter fa-1x"></i><span>Twitter</span>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" title="Facebook" href="https://www.facebook.com/Red-Mountain-Games-105828404571144/">
+							<i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" title="Instagram" href="https://www.instagram.com/red_mountain_games">
+							<i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" title="YouTube" href="https://www.youtube.com/channel/UCi7oKdEY4Q2BuDWv2uLPwxw?view_as=subscriber">
+							<i class="fa fa-youtube fa-1x"></i><span>YouTube</span>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" title="Pinterest" href="https://www.pinterest.com/redmountaingames/">
+							<i class="fa fa-pinterest fa-1x"></i><span>Pinterest</span>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" title="Reddit" href="https://www.reddit.com/user/RedMountainGames/">
+							<i class="fa fa-reddit fa-1x"></i><span>Reddit</span>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" title="Email" href="mailto:rmg.kontakt@gmail.com">
+							<i class="fa fa-envelope fa-1x"></i><span>Email</span>
+						</a>
+					</li>
+            </ul>
+            <!--End of Social Icons in Footer-->
+			<p id="copyright" class="">Copyright © Red Mountain Games 2020</a></p>
+        </div></center>
+    </footer>
+    <!--End of Footer-->
+
+</div>
+
+<!-- Include JavaScript resources -->
+<script src="js/jquery.1.8.3.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/featherlight.min.js"></script>
+<script src="js/featherlight.gallery.min.js"></script>
+<script src="js/jquery.enllax.min.js"></script>
+<script src="js/jquery.scrollUp.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery.stickyNavbar.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/images-loaded.min.js"></script>
+<script src="js/lightbox.min.js"></script>
+<script src="js/site.js"></script>
+
 
 </body>
-
 </html>

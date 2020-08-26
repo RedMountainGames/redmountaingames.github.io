@@ -1,264 +1,399 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
 
-<head>
+    <!--Page Title-->
+    <title>Fusion Game Official</title>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Fusion Game Official Web Site">
-  <meta name="author" content="RedMountainGames">
+    <!--Meta Keywords and Description-->
+    <meta name="keywords" content="rmg red mountain games gamedev fusion indie">
+    <meta name="description" content="Fusion Game Official Website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
 
-  <title>Fusion</title>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.ico" title="Favicon"/>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Main CSS Files -->
+    <link rel="stylesheet" href="css/style-fusion.css">
 
-  <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <!-- Namari Color CSS -->
+    <link rel="stylesheet" href="css/namari-color-fusion.css">
 
-  <!-- Custom styles for this template -->
-  <link href="css/fusion.css" rel="stylesheet">
-  <script src="vendor/jquery/jquery.min.js"></script>
+    <!--Icon Fonts - Font Awesome Icons-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 
-  <link rel="icon" href="img/icon.ico">
+    <!-- Animate CSS-->
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
 
-  <script language="javascript">
-	var scrolling = false;
-	var currentPos = 0;
-
-    function scrollUp(){
-        if(!scrolling && currentPos > 0 ){
-            scrolling=true;
-            currentPos --;
-            var scrollToElement = $('.scrollTo')[currentPos];
-
-            $('html, body').animate({
-                scrollTop: $(scrollToElement).offset().top - 70
-            }, 500, function(){
-                scrolling = false;
-            });
-        }
-    }
-
-    function scrollDown(){
-        if(!scrolling && currentPos < $('.scrollTo').length-1  ){
-            scrolling=true;
-            currentPos ++;
-            var scrollToElement = $('.scrollTo')[currentPos];
-
-            $('html, body').animate({
-                scrollTop: $(scrollToElement).offset().top - 70
-            }, 500,function(){
-                scrolling = false;
-            });
-        }
-    }
-
-    $(document).ready(function() {
-        for( var i = 0; i < $('.scrollTo').length; i++){
-            var elm = $('.scrollTo')[i];
-
-            if( $(document).scrollTop() - 70 >= $(elm).offset().top ){
-                currentPos = i;
-            }
-        }
-
-        $(document).bind('DOMMouseScroll', function(e){
-            if(e.originalEvent.detail > 0) {
-                scrollDown();
-            }else {
-                scrollUp();
-            }
-            return false;
-        });
-
-        $(document).bind('mousewheel', function(e){
-            if(e.originalEvent.wheelDelta < 0) {
-                scrollDown();
-            }else {
-                scrollUp();
-            }
-            return false;
-        });
-    });
-
-
-	$("button").click(function () {
-    $("#content").hide();
-    $("#yt")[0].src += "?autoplay=1";
-    $("#yt").show();
-    });
-
-  </script>
-
+    <!--Google Webfonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 </head>
+<body>
 
-<body id="page-top">
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-black fixed-top" id="mainNav">
-    <div class="container">
-
-	  <a class="navbar-brand js-scroll-trigger" href="#page-top">
-		<div class="col-lg-4">
-          <img class="img-fluid navbar-brand" src="img/logo_title_fusion.png" alt="">
-        </div>
-	  </a>
-
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#world">World</a>
-          </li>
-		  <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#gameplay">Gameplay</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
-		  <button type="button" class="btn-patreon btn-primary btn-sm" onclick="window.open('https://www.patreon.com/RedMountainGames')">Patreon</button>
-        </ul>
-      </div>
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status" class="la-ball-triangle-path">
+        <div></div>
+        <div></div>
+        <div></div>
     </div>
-  </nav>
+</div>
+<!--End of Preloader-->
 
-  <!-- Header -->
+<div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
+    <div class="top-border wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;"></div>
+    <div class="right-border wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;"></div>
+    <div class="bottom-border wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"></div>
+    <div class="left-border wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;"></div>
+</div>
 
-  <header class="masthead scrollTo">
+<div id="wrapper">
 
-	<video autoplay muted loop no-controls class="video-background" poster="img/bg_fusion.png">
-		<source src="movies/fusion1.mp4" type="video/mp4">
-	</video>
+    <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
+        <div id="header" class="nav-collapse">
+            <div class="row clearfix">
+                <div class="col-1">
 
-    <div class="container d-flex align-items-center">
-      <div class="mx-auto text-center">
+                    <!--Logo-->
+                    <div id="logo">
 
-		<div class="centered-head-button">
-			<a href="#trailer" class="btn btn-primary js-scroll-trigger">Watch Teaser Trailer</a>
-		</div>
+                        <!--Logo that is shown on the banner-->
+                        <img src="images/logo_title_fusion.png" id="banner-logo" alt="Landing Page"/>
+                        <!--End of Banner Logo-->
 
-      </div>
-    </div>
-  </header>
+                        <!--The Logo that is shown on the sticky Navigation Bar-->
+                        <img src="images/logo_title_fusion.png" id="navigation-logo" alt="Landing Page"/>
+                        <!--End of Navigation Logo-->
 
-  <!-- Black Mountain -->
-	<div class="trailer-div scrollTo embed-responsive" id="trailer">
-		<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/e29VW9ReCqU"></iframe>
-	</div>
+                    </div>
+                    <!--End of Logo-->
 
-	<!-- Black Mountain -->
-	<div class="blackmountain-div scrollTo" id="about">
-		<div class="centered">
-			<h4 class="text-white">About</h4>
-			<hr class="">
-		</div>
+                    <aside>
+					
+                        <!--Social Icons in Header-->
+                        <ul class="social-icons">
+                            <li>
+                                <a target="_blank" title="Twitter" href="https://twitter.com/RedMountainGame">
+                                    <i class="fa fa-twitter fa-1x"></i><span>Twitter</span>
+                                </a>
+                            </li>
+							<li>
+								<a target="_blank" title="Facebook" href="https://www.facebook.com/Red-Mountain-Games-105828404571144/">
+									<i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
+								</a>
+							</li>
+                            <li>
+                                <a target="_blank" title="Instagram" href="https://www.instagram.com/red_mountain_games">
+                                    <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" title="YouTube" href="https://www.youtube.com/channel/UCi7oKdEY4Q2BuDWv2uLPwxw?view_as=subscriber">
+                                    <i class="fa fa-youtube fa-1x"></i><span>YouTube</span>
+                                </a>
+                            </li>
+							<li>
+                                <a target="_blank" title="Pinterest" href="https://www.pinterest.com/redmountaingames/">
+                                    <i class="fa fa-pinterest fa-1x"></i><span>Pinterest</span>
+                                </a>
+                            </li>
+							<li>
+                                <a target="_blank" title="Reddit" href="https://www.reddit.com/user/RedMountainGames/">
+                                    <i class="fa fa-reddit fa-1x"></i><span>Reddit</span>
+                                </a>
+                            </li>
+							<li>
+                                <a target="_blank" title="Email" href="mailto:rmg.kontakt@gmail.com">
+                                    <i class="fa fa-envelope fa-1x"></i><span>Email</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!--End of Social Icons in Header-->
 
-		<div class="centered-subtitle">
-            <p class="text-white-0 text-justify">
-				<br>
-				Fusion is a third-person shooter game with elements of Survival Horror developing by Red Mountain Games studio.
-				Game currently is under active development and suppose to release under PC platform.
-				All in-game footage is a work in progress made with Unreal Engine 4 and does not represent the final look of the game.
-				</br>
-			</p>
+                    </aside>
+
+                    <!--Main Navigation-->
+                    <nav id="nav-main">
+                        <ul>
+							<li>
+                                <a href="#banner">HOME</a>
+                            </li>
+							<li>
+                                <a href="#trailer-div">TRAILER</a>
+                            </li>
+							<li>
+                                <a href="#about-div">ABOUT</a>
+                            </li>
+							<li>
+                                <a href="#world-div">WORLD</a>
+                            </li>
+							<li>
+                                <a href="#features-div">FEATURES</a>
+                            </li>
+							<li>
+                                <a href="#gameplay-div">GAMEPLAY</a>
+                            </li>
+							<li>
+								<a href="#links-div">LINKS</a>
+							</li>
+							<li>
+                                <a href="#gallery">GALLERY</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!--End of Main Navigation-->
+
+                    <div id="nav-trigger"><span></span></div>
+                    <nav id="nav-mobile"></nav>
+
+                </div>
+            </div>
+        </div><!--End of Header-->
+
+        <!--Banner Content-->
+        <div id="banner-content" class="row clearfix">
+
+            <div class="col-38">
+
+                <div class="section-heading">
+                    <h1>IMPROVISE ADAPT OVERCOME</h1>
+                </div>
+	
+                <!--Call to Action-->
+                <a href="https://www.patreon.com/RedMountainGames" target="_blank" class="button">JOIN US ON PATREON!</a>
+                <!--End Call to Action-->
+
+            </div>
+
+        </div><!--End of Row-->
+    </header>
+
+    <!--Main Content Area-->
+    <main id="content">
+	
+		<!--Trailer Section-->
+        <div id="trailer-div" class="scrollto clearfix">
+            <iframe width="100%" height="590" src="https://www.youtube.com/embed/aEGUu3XVpGI" frameborder="0" allowfullscreen></iframe>
         </div>
-	</div>
+        <!--End of Trailer Section-->
 
-	<!-- World -->
-	<div class="earthquake-div scrollTo" id="world">
-		<div class="centered">
-			<h4 class="text-white">World</h4>
-			<hr class="">
-		</div>
-
-		<div class="centered-subtitle">
-            <p class="text-white-50 text-justify">				
-				Your journey begins from the station Black Mountain.
-				Station Black Mountain is a modern military research center created by one of the most powerful corporation called Protonesis.
-				At the start of 2064 there was founded the cave with strange electromagnetic properties.
-				The properties were useful for a station needs.
-				Researches in electromagnetic and biology never be so close to produce next-gen virus based on sound waves propagation and human brain activity.
-				</br>
-			</p>
+		<!--About Section-->
+        <div id="about-div" class="scrollto clearfix">
+            <div class="row clearfix">
+                <div class="col-3">
+                    <div class="section-heading">
+                        <h2 class="section-title">ABOUT</h2>
+                        <p class="section-subtitle">
+						Fusion is a sci-fi third-person shooter with the survival horror elements. 
+						Fight to survive in the underground science station. 
+						Improvise, adapt, overcome. Survival mechanics are based on managing limited resources. 
+						Usage of items and environment would provide players with the range of mechanics to destroy and/or lure enemies.
+						</p>
+                    </div>
+					<!--Call to Action-->
+					<a href="#" data-videoid="e29VW9ReCqU" data-videosite="youtube" class="button video link-lightbox">WATCH TEASER TRAILER</a>
+					<!--End Call to Action-->
+                </div>
+            </div>
         </div>
-	</div>
-
-	<!-- Gameplay -->
-	<div class="gameplay-div scrollTo" id="gameplay">
-		<div class="centered">
-			<h4 class="text-white">Gameplay</h4>
-			<hr class="">
-		</div>
-
-		<div class="centered-subtitle">
-            <p class="text-white-50 text-justify">
-				Fusion designed as classic third-person shooter game with elements of survival. 
-				Survival mechanics are based on managing limited resources.
-				Usage of items and environment placed on the station would provide to the players more opportunity to destroy and/or entice enemies.
-				Currently, game and mechanics is under active development, stay tuned for our updates.
-			</p>
+        <!--End of About Section-->
+		
+		<!--World Section-->
+        <div id="world-div" class="scrollto clearfix">
+            <div class="row clearfix">
+                <div class="col-3">
+                    <div class="section-heading">
+                        <h2 class="section-title">WORLD</h2>
+                        <p class="section-subtitle">
+						Your journey begins from the Black Mountain station. 
+						This station is a modern military research center created by one of the most powerful corporations called Protonesis. 
+						The cave with strange electromagnetic properties was found there at the beginning of 2064. Its properties came in handy for the station.
+						Researchers in electromagnetism and biology were never so close to create a next-gen virus based on sound waves propagation and human brain activity.
+						</p>
+						<p class="section-subtitle">
+						Nevertheless, it all changed in one night. At the beginning you meet Natasha Melnyk — a director of engineering; 
+						you both are going to try to figure out what happened and get out of the station.
+						<p>
+                    </div>
+					<!--Call to Action-->
+					<a href="#" data-videoid="kVHGiLglopU" data-videosite="youtube" class="button video link-lightbox">WATCH STATION TRAILER</a>
+					<!--End Call to Action-->
+                </div>
+            </div>
         </div>
-	</div>
+        <!--End of World Section-->
+		
+		<!--Features Section-->
+        <div id="features-div" height='100%' class="scrollto clearfix">
+            <div class="row clearfix">
+                <div class="col-3">
+                    <div class="section-heading">
+                        <h2 class="section-title">FEATURES</h2>
+                        <p class="section-subtitle">
+						We are planning implement the range of mechanics such as: 
+						the ability to change the gamestyle using surroundings, 
+						an electric gun which will be mainly used to solve puzzles, 
+						an alpha antagonist and electromagnetic anomalies.
+						</p>
+						<p class="section-subtitle">
+						We are planning to let people play for three different characters; each of them has unique mechanics which makes the gameplay more diverting.
+						</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End of Features Section-->
+		
+		<!--Gameplay Section-->
+        <div id="gameplay-div" class="scrollto clearfix">
+            <div class="row clearfix">
+                <div class="col-3">
+                    <div class="section-heading">
+                        <h2 class="section-title">GAMEPLAY</h2>
+                        <p class="section-subtitle">Fusion designed as classic third-person shooter game with elements of survival.</p> 
+						<p class="section-subtitle">Survival mechanics are based on managing limited resources. Usage of items and environment placed on the station would provide to the players more opportunity to destroy and/or entice enemies.</p>
+						<p class="section-subtitle">Currently, game and mechanics is under active development, stay tuned for our updates.</p>
+                    </div>
+					<!--Call to Action-->
+					<a href="#" data-videoid="aEGUu3XVpGI" data-videosite="youtube" class="button video link-lightbox">WATCH GAMEPLAY TRAILER</a>
+					<!--End Call to Action-->
+                </div>
+            </div>
+        </div>
+        <!--End of Gameplay Section-->
+		
+		<!--Gameplay Section-->
+        <div id="links-div" class="scrollto clearfix">
+            <div class="row clearfix">
+                <div class="col">
+                    <div class="section-heading">
+                        <h2 class="section-title">LINKS</h2>
+                        <p class="section-subtitle">For press related enquiries and Youtube or Twitch collaborations, please contact: rmg.kontakt@gmail.com</p> 
+						
+                    </div>
+					<a href="https://drive.google.com/drive/folders/1ToCLE5eNFYLrkATIMo1HIWx3Ke07jRUj?usp=sharing" class="button" target="_blank">RED MOUNTAIN GAMES BRAND LOGOS</a></br>
+					<a href="https://drive.google.com/drive/folders/1PhkClN3fxcr4g0HSkb8vbJ8vKElUSUW7?usp=sharing" target="_blank" class="button">FUSION IMAGES & GIFS</a></br>
+					<a href="https://drive.google.com/drive/folders/1-QZBcHH3z859DUDbhb4u4LERj5bACr_w?usp=sharing" class="button" target="_blank">FUSION TRAILER VIDEOS</a></br>
+                </div>
+            </div>
+        </div>
+        <!--End of Gameplay Section-->
+		
+		
+		<!--Gallery-->
+        <aside id="gallery" class="row text-center scrollto clearfix" data-featherlight-gallery data-featherlight-filter="a">
+		
+				<div class="section-heading">
+                    <h2 class="section-title">GALLERY</h2>
+                </div>
+		
+                <a href="images/gallery-images/gallery_1.png" data-featherlight="image" class="col-2 wow fadeIn"
+                   data-wow-delay="0.1s"><img src="images/gallery-images/gallery_thumb_1.png" alt="Landing Page"/>
+				</a>
+                <a href="images/gallery-images/gallery_2.png" data-featherlight="image" class="col-2 wow fadeIn"
+                   data-wow-delay="0.3s"><img src="images/gallery-images/gallery_thumb_2.png" alt="Landing Page"/>
+				</a>
+				
+                <a href="images/gallery-images/gallery_3.png" data-featherlight="image" class="col-2 wow fadeIn"
+                   data-wow-delay="0.5s"><img src="images/gallery-images/gallery_thumb_3.png" alt="Landing Page"/>
+				</a>
+				<a href="images/gallery-images/gallery_7.png" data-featherlight="image" class="col-2 wow fadeIn"
+                   data-wow-delay="1.1s"><img src="images/gallery-images/gallery_thumb_7.png" alt="Landing Page"/>
+				</a>
+				
+                <a href="images/gallery-images/gallery_8.png" data-featherlight="image" class="col-2 wow fadeIn"
+                   data-wow-delay="0.9s"><img src="images/gallery-images/gallery_thumb_8.png" alt="Landing Page"/>
+				</a>
+                <a href="images/gallery-images/gallery_9.png" data-featherlight="image" class="col-2 wow fadeIn"
+                   data-wow-delay="0.7s"><img src="images/gallery-images/gallery_thumb_9.png" alt="Landing Page"/>
+				</a>
+				
+                <a href="images/gallery-images/gallery_4.png" data-featherlight="image" class="col-2 wow fadeIn"
+                   data-wow-delay="1.1s"><img src="images/gallery-images/gallery_thumb_4.png" alt="Landing Page"/>
+				</a>
+                <a href="images/gallery-images/gallery_5.png" data-featherlight="image" class="col-2 wow fadeIn"
+                   data-wow-delay="0.9s"><img src="images/gallery-images/gallery_thumb_5.png" alt="Landing Page"/>
+				</a>
+				
+                <a href="images/gallery-images/gallery_6.png" data-featherlight="image" class="col-2 wow fadeIn"
+                   data-wow-delay="0.7s"><img src="images/gallery-images/gallery_thumb_6.png" alt="Landing Page"/>
+				</a>
+				<a href="images/gallery-images/gallery_10.png" data-featherlight="image" class="col-2 wow fadeIn"
+                   data-wow-delay="0.7s"><img src="images/gallery-images/gallery_thumb_10.png" alt="Landing Page"/>
+				</a>
+        </aside>
+        <!--End of Gallery-->
 
-  <!-- Contact Section -->
-  <section class="contact-section bg-black scrollTo" id="contact">
-    <div class="container">
 
-      <div class="featured-text text-center text-white">
-          <h4>Contact with Us</h4>
-	  </div>
-
-      <div class="social d-flex justify-content-center">
-        <a href="https://twitter.com/RedMountainGame" target="_blank" class="mx-2">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="https://www.reddit.com/user/RedMountainGames" target="_blank" class="mx-2">
-          <i class="fab fa-reddit"></i>
-        </a>
-		<a href="https://www.instagram.com/red_mountain_games" target="_blank" class="max-2">
-		  <i class="fab fa-instagram"></i>
-		</a>
-		<a href="https://www.pinterest.com/redmountaingames/" target="_blank" class="mx-2">
-		  <i class="fab fa-pinterest"></i>
-		</a>
-		<a href="https://www.youtube.com/channel/UCi7oKdEY4Q2BuDWv2uLPwxw?view_as=subscriber" target="_blank" class="mx-2">
-		  <i class="fab fa-youtube"></i>
-		</a>
-        <a href="mailto:rmg.kontakt@gmail.com" class="mx-2">
-          <i class="fa fa-envelope"></i>
-        </a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-black small text-center text-white-50">
-    <div class="container">
-      Copyright &copy; Red Mountain Games 2020
-    </div>
-  </footer>
+    </main>
+    <!--End Main Content Area-->
 
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--Footer-->
+    <footer id="landing-footer" class="clearfix">
+		<center> 
+		    <div class="row clearfix">
+            <!--Social Icons in Footer-->
+            <ul class="col social-icons">
+					<li>
+						<a target="_blank" title="Twitter" href="https://twitter.com/RedMountainGame">
+							<i class="fa fa-twitter fa-1x"></i><span>Twitter</span>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" title="Facebook" href="https://www.facebook.com/Red-Mountain-Games-105828404571144/">
+							<i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" title="Instagram" href="https://www.instagram.com/red_mountain_games">
+							<i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" title="YouTube" href="https://www.youtube.com/channel/UCi7oKdEY4Q2BuDWv2uLPwxw?view_as=subscriber">
+							<i class="fa fa-youtube fa-1x"></i><span>YouTube</span>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" title="Pinterest" href="https://www.pinterest.com/redmountaingames/">
+							<i class="fa fa-pinterest fa-1x"></i><span>Pinterest</span>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" title="Reddit" href="https://www.reddit.com/user/RedMountainGames/">
+							<i class="fa fa-reddit fa-1x"></i><span>Reddit</span>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" title="Email" href="mailto:rmg.kontakt@gmail.com">
+							<i class="fa fa-envelope fa-1x"></i><span>Email</span>
+						</a>
+					</li>
+            </ul>
+            <!--End of Social Icons in Footer-->
+			<p id="copyright" class="">Copyright © Red Mountain Games 2020</a></p>
+        </div></center>
+    </footer>
+    <!--End of Footer-->
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+</div>
 
-  <!-- Custom scripts for this template -->
-  <script src="js/grayscale.min.js"></script>
+<!-- Include JavaScript resources -->
+<script src="js/jquery.1.8.3.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/featherlight.min.js"></script>
+<script src="js/featherlight.gallery.min.js"></script>
+<script src="js/jquery.enllax.min.js"></script>
+<script src="js/jquery.scrollUp.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery.stickyNavbar.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/images-loaded.min.js"></script>
+<script src="js/lightbox.min.js"></script>
+<script src="js/site.js"></script>
+
 
 </body>
-
 </html>

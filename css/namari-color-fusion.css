@@ -1,0 +1,354 @@
+/* Namari Landing Page Dynamic Style Index
+
+1. Website Default Styling
+2. Navigation
+3. Primary and Secondary Colors
+4. Banner
+5. Typography
+6. Buttons
+7. Footer
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 1. Website Default Styling */
+/*------------------------------------------------------------------------------------------*/
+
+
+body {
+    background: #111;
+}
+
+
+/* Default Link Color */
+
+a, .la-ball-triangle-path {
+    color:#d2b356;
+}
+
+a:hover, #header.nav-solid nav a:hover {
+    color: red;
+}
+
+/* Default Icon Color */
+
+.icon i {
+    color:#d2b356;
+}
+
+/* Border Color */
+
+#banner .section-heading:before, .testimonial.classic footer:before {
+    background: white;
+}
+
+.pricing-block-content:hover {
+    border-color:#d2b356;
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 2. Navigation */
+/*------------------------------------------------------------------------------------------*/
+
+
+/* Transparent Navigation Color on a Banner */
+
+#header nav a, #header i {
+    color: white;
+}
+
+
+/* Navigation Colors when the Navigation is sticky and solid */ 
+
+#header.nav-solid, #header.nav-solid a, #header.nav-solid i, #nav-mobile ul li a {
+    color: white;
+}
+
+
+/* Navigation Active State */
+
+#header.nav-solid .active {
+    color: red;
+    border-color: red;
+}    
+
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 3. Primary and Secondary Colors */
+/*------------------------------------------------------------------------------------------*/
+
+/* Primary Background and Text Colors */
+
+.primary-color, .featured .pricing {
+    background-color: white;
+}
+
+.primary-color, .primary-color .section-title, .primary-color .section-subtitle, .featured .pricing, .featured .pricing p {
+    color: white;    
+}
+
+.section-heading h2:after {
+    background: white;
+    content:"";
+    display:block;
+    width:30px;
+    height:0px;
+    margin-top:30px;
+}
+
+.text-center .section-heading h2:after {
+    margin:30px auto 25px auto;
+}
+
+/* Primary Icon Colors */
+
+.primary-color .icon i, .primary-color i {
+    color:#fff;
+}
+
+
+/* Secondary Background and Text Colors */
+
+.secondary-color {
+    background-color: white;
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 4. Banner */
+/*------------------------------------------------------------------------------------------*/
+
+
+/* Banner Background and Text Colors */
+
+#banner {
+    background: url("../images/fusion_banner.png") no-repeat center top;
+    background-size:cover;
+}
+
+#about-div {
+	background: url("../images/fusion_world.png") no-repeat center;
+    background-size:cover;
+	background-position: 50% 50%;
+}
+
+#world-div {
+	background: url("../images/fusion_about.png") no-repeat center;
+    background-size:cover;
+	background-position: 50% 50%;
+}
+
+#features-div {
+	background: url("../images/fusion_features.png") no-repeat center;
+    background-size:cover;
+	background-position: 50% 50%;
+}
+
+#gameplay-div {
+	background: url("../images/fusion_gameplay.png") no-repeat center;
+    background-size:cover;
+	background-position: 50% 50%;
+}
+
+#links-div {
+	background: url("../images/fusion_links.png") no-repeat center;
+    background-size:cover;
+	background-position: 50% 50%;
+}
+
+.trailer-div {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background-color: rgba(22, 22, 22, 1.0);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 5. Typography */
+/*------------------------------------------------------------------------------------------*/
+
+
+body {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size:15px;
+    font-weight:normal;
+    color: white;
+}
+
+/* Banner Typography */
+
+#banner h1 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size:62px;
+    line-height:60px;
+    font-weight:800;
+    color: white;
+}
+
+#banner h2 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size:18px;
+    font-weight:300;
+    color: white;
+}
+
+
+/* Section Title and Subtitle */
+
+.section-title {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 34px; 
+    font-weight:700;
+    color: white;
+}
+
+.section-subtitle {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 16px;
+    font-weight:300;
+    color: white;
+	text-shadow: 1px 1px 1px #000;
+}
+
+/* Testimonial */
+
+.testimonial q {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 17px; 
+    font-weight:300;
+}
+
+.testimonial.classic q, .testimonial.classic footer {
+    color: white;
+}
+
+
+/* Standard Headings h1-h6 */
+
+h1 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 40px; 
+    font-weight:300;
+    color: white;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 34px; 
+    font-weight:300;
+    color: white;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 30px; 
+    font-weight:700;
+    color: white;
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 18px; 
+    font-weight:400;
+    color:#fff;
+}
+
+h5 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 16px; 
+    font-weight:400;
+    color:#fff;
+}
+
+h6 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 14px; 
+    font-weight:400;
+    color:#fff;
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 6. Buttons */
+/*------------------------------------------------------------------------------------------*/
+
+/* ----------Default Buttons---------- */
+
+
+/* Button Text */
+
+.button, input[type="submit"]  {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size:14px;
+    font-weight:bold;
+    color: white;
+}
+
+
+/* Button Color */
+
+.button, input[type="submit"] {
+    border-color: white;
+}
+
+
+/* Button Hover Color */
+
+.button:hover,  input[type="submit"]:hover {
+    border-color: red;
+    color: red;
+}
+
+
+/* ----------Banner Buttons---------- */
+
+
+/* Button Text */
+
+#banner .button {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size:16px;
+    color:white;
+}
+
+/* Button Color */
+
+#banner .button {
+    border-color: white;
+}
+
+/* Button Hover Color */
+
+#banner .button:hover {
+    color: red;
+    border-color: red;
+}
+
+
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 7. Footer */
+/*------------------------------------------------------------------------------------------*/
+
+#landing-footer, #landing-footer p, #landing-footer a {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size:12px;
+    font-weight:normal;
+    color:#999;
+}
+
+/* Footer Icon Color */
+
+#landing-footer i {
+    color:#999;
+}
