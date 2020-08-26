@@ -2169,13 +2169,11 @@ blockquote {
 
     /* Footer */
     #landing-footer #copyright {
-        float: left;
-        width: 50%;
+        display: none;
     }
 
     #landing-footer .social-icons {
-        float: right;
-        width: 50%;
+        /* null */
     }
 
     /*-----------------Typography-----------------*/
