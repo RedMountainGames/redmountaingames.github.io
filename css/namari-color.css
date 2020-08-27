@@ -130,10 +130,14 @@ a:hover, #header.nav-solid nav a:hover {
 #fusion-div {
 	background: url("../images/main_fusion.png") no-repeat center top;
     background-size:cover;
-	background-position: 50% 50%;
+	/*background-position: 50% 50%;*/
 }
 
-
+@media (min-width: 2000px) {
+    #fusion-div {
+        min-height: 1300px;
+    }    
+}
 
 
 

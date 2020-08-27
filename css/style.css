@@ -800,7 +800,11 @@ h6 {
     margin-top: 30px;
 }
 
-
+@media (min-width: 2000px) {
+    #banner-content.row {
+        min-height: 1300px;
+    }
+}
 
 /*------------------------------------------------------------------------------------------*/
 /* 5. Content Elements */
@@ -1397,8 +1401,7 @@ blockquote {
 .client-overlay {
     background: rgba(0, 0, 0, 0.8);
     position: absolute;
-    top;
-    0;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;

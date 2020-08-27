@@ -170,6 +170,35 @@ a:hover, #header.nav-solid nav a:hover {
   background-size: cover;
 }
 
+@media (min-width: 2000px) {
+    #banner {
+        min-height: 1200px;
+    }
+    
+    #about-div {
+        min-height: 1200px;
+    }
+    
+    #world-div {
+        min-height: 1200px;
+    }
+    
+    #features-div {
+        min-height: 1200px;
+    }
+    
+    #gameplay-div {
+        min-height: 1200px;
+    }
+    
+    #links-div {
+        min-height: 1200px;
+    }
+
+    .trailer-div {
+        min-height: 1200px;
+    }
+}
 
 
 /*------------------------------------------------------------------------------------------*/
