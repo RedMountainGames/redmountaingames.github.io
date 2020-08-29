@@ -72,8 +72,6 @@ a:hover, #header.nav-solid nav a:hover {
     border-color: red;
 }    
 
-
-
 /*------------------------------------------------------------------------------------------*/
 /* 3. Primary and Secondary Colors */
 /*------------------------------------------------------------------------------------------*/
@@ -151,7 +149,7 @@ body {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size:15px;
     font-weight:normal;
-    color: white;
+    color: black;
 }
 
 /* Banner Typography */

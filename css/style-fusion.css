@@ -553,7 +553,7 @@ section {
     display: inline-block;
     width: 38px;
     height: 71px;
-    color: #111;
+    color: white;
     cursor: pointer;
     text-transform: uppercase;
     font-size: 22px;
@@ -591,11 +591,11 @@ section {
 }
 
 .nav-solid #nav-trigger span.open:hover {
-    color: #999;
+    color: white;
 }
 
 .nav-solid #nav-trigger span {
-    color: #999;
+    color: white;
     opacity: 1;
 }
 
@@ -1564,7 +1564,7 @@ blockquote {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #fff; /* change if the mask should have another color then white */
+    background-color: black; /* change if the mask should have another color then white */
     z-index: 99999; /* makes sure it stays on top */
 }
 
@@ -1572,8 +1572,8 @@ blockquote {
     width: 110px;
     height: 110px;
     position: absolute;
-    left: 50%; /* centers the loading animation horizontally one the screen */
-    top: 50%; /* centers the loading animation vertically one the screen */
+    left: 55%; /* centers the loading animation horizontally one the screen */
+    top: 55%; /* centers the loading animation vertically one the screen */
     background-position: center;
     margin: -55px 0 0 -55px; /* is width and height divided by two */
     text-align: center;
@@ -2263,7 +2263,7 @@ blockquote {
     /* Footer */
     #landing-footer #copyright {
         float: left;
-        width: 50%;
+        width: 30%;
     }
 
     #landing-footer .social-icons {
