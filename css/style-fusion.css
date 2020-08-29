@@ -587,7 +587,7 @@ section {
 }
 
 #nav-trigger span.open, #nav-trigger span.open:hover {
-    color: #111;
+    color: white;
 }
 
 .nav-solid #nav-trigger span.open:hover {
